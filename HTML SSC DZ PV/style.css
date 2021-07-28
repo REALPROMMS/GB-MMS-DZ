@@ -49,7 +49,7 @@ body {
 	border: none;
 	background: #ff6a6a;
 	border-radius: 0 10px 10px 0;
-	background-image: url(photo/header/found.svg);
+	background-image: url(/photo/header/found.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -64,7 +64,9 @@ body {
 .img_head:not(:last-child) {
 	margin-right: 12px;
 }
-
+.img_icon {
+	fill: #fff;
+}
 .img_icon:hover {
 	background: #f16d7f;
 }
