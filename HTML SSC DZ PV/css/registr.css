@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+}
+.container {
+	width: 1600px;
+	margin: 0 auto;
+}
+.catalog_header_color {
+	background-color: #ebebeb;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.catalog_header {
+	padding-left: 230px;
+}
+.catalog_header_title {
+	color: #f16d7f;
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: normal;
+}
+.registr__padding {
+	padding-left: 230px;
+	padding-right: 230px;
+}
+.registr {
+	padding-top: 65px;
+	padding-bottom: 96px;
+	display: flex;
+	justify-content: space-between;
+}
+.registr_form {
+	max-width: 360px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.registr_form_title {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+	color: #222222;
+	margin-bottom: 20px;
+}
+.registr_info_input {
+	width: 360px;
+	height: 45px;
+	margin-bottom: 20px;
+	text-align: left;
+	padding: 13px 17px;
+}
+.registr_form p {
+	font-size: 13px;
+	line-height: 16px;
+	color: #b1b1b1;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+.registr_content {
+	max-width: 650px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.registr_content h3 {
+	font-size: 24px;
+	line-height: 29px;
+	color: #000;
+	font-weight: 300;
+	text-transform: capitalize;
+	margin-bottom: 22px;
+}
+.registr_content p {
+	font-size: 24px;
+	line-height: 29px;
+	color: #000;
+	font-weight: 300;
+	margin-bottom: 21px;
+}
+.registr_content ul {
+	font-size: 24px;
+	line-height: 29px;
+	color: #000;
+	font-weight: 300;
+}
+ul,
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.registr_content ul li {
+	display: flex;
+	margin-bottom: 15px;
+}
+.registr_content ul li:before {
+	content: url(photo/registration/arrow.svg);
+	display: block;
+	margin-right: 23px;
+}
+.registr_form_button {
+	padding: 17px 29px;
+	border: none;
+	background-color: #f16d7f;
+	font-size: 14px;
+	line-height: 17px;
+	color: #fff;
+	font-weight: 400;
+	cursor: pointer;
+}
+.registr_form_button svg {
+	fill: white;
+	margin-left: 20px;
+}
