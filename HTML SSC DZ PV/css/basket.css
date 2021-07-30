@@ -59,6 +59,10 @@ body {
 	transition: all 0.1s linear;
 	cursor: pointer;
 }
+.shopping_content_item_description svg:hover {
+	fill: #ef5b70;
+	transition: all 0.2s linear;
+}
 .shopping_content_item_info {
 	font-size: 22px;
 	line-height: 26px;
@@ -74,6 +78,12 @@ body {
 .shopping_content_item_buttons {
 	display: flex;
 	justify-content: space-between;
+}
+.shopping_content_item_button:hover {
+	color: white;
+	background: #ef5b70;
+	outline: none;
+	transition: all 0.2s linear;
 }
 .shopping_content_item_button {
 	padding: 16px 40px;
@@ -118,6 +128,12 @@ body {
 	border: none;
 	margin-bottom: 60px;
 }
+.shopping_content_info_button:hover {
+	color: white;
+	background: #ef5b70;
+	outline: none;
+	transition: all 0.2s linear;
+}
 .shopping_content_info_total {
 	background: #f5f3f3;
 	padding: 41px 44px;
@@ -152,4 +168,24 @@ body {
 	margin-top: 21px;
 	margin-bottom: 17px;
 	height: 1px;
+}
+.shopping_content_info_total button {
+	width: 100%;
+	padding: 15px 20px;
+	font-size: 16px;
+	line-height: 19px;
+	color: #fff;
+	font-weight: 300;
+	border: none;
+	cursor: pointer;
+	transition: all 0.2s linear;
+	background-color: transparent;
+	outline: 1px solid #4a4a4a;
+	color: #4a4a4a;
+}
+.shopping_content_info_total button:hover {
+	color: white;
+	background: #ef5b70;
+	outline: none;
+	transition: all 0.2s linear;
 }

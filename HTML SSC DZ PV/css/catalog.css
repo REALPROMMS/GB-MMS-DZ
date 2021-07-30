@@ -35,6 +35,7 @@ body {
 }
 .catalog_header_menu_link:hover {
 	color: #f16d7f;
+	transition: all 0.2s linear;
 }
 .catalog_header_menu_link {
 	font-weight: 300;

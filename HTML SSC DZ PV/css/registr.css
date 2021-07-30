@@ -102,13 +102,13 @@ li {
 	margin-bottom: 15px;
 }
 .registr_content ul li:before {
-	content: url(photo/registration/arrow.svg);
+	content: url(photo/registration/arrow_regist.svg);
 	display: block;
 	margin-right: 23px;
 }
 .registr_form_button {
 	padding: 17px 29px;
-	border: none;
+	border: 1px solid white;
 	background-color: #f16d7f;
 	font-size: 14px;
 	line-height: 17px;
@@ -119,4 +119,14 @@ li {
 .registr_form_button svg {
 	fill: white;
 	margin-left: 20px;
+}
+.registr_form_button:hover svg {
+	fill: #000;
+	transition: all 0.2s linear;
+}
+.registr_form_button:hover {
+	color: #000;
+	background-color: white;
+	border: 1px solid #000;
+	transition: all 0.2s linear;
 }

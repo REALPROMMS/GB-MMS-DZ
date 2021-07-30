@@ -72,6 +72,7 @@ body {
 }
 .img_icon:hover {
 	fill: #f16d7f;
+	transition: all 0.2s linear;
 }
 
 .mega-box {
@@ -105,6 +106,7 @@ body {
 }
 .mega-link:hover {
 	color: #f16d7f;
+	transition: all 0.2s linear;
 }
 .menu-item {
 	padding-top: 5px;
@@ -280,6 +282,7 @@ spanCARD {
 	color: #f26376;
 	padding: 15px 40px;
 	text-decoration: none;
+	transition: all 0.2s linear;
 }
 .button_main {
 	padding-top: 58px;
@@ -391,6 +394,7 @@ spanCARD {
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 	padding: 16px 22px;
+	outline: none;
 }
 .subscribe_form_button {
 	text-align: center;
@@ -403,6 +407,10 @@ spanCARD {
 	border-bottom-right-radius: 20px;
 	cursor: pointer;
 	transition: all 0.2s linear;
+}
+.subscribe_form_button:hover {
+	color: black;
+	background: white;
 }
 .footer_bot {
 	background: #222224;
@@ -441,6 +449,7 @@ spanCARD {
 }
 .social_media_item:hover {
 	background: #f16d7f;
+	transition: all 0.2s linear;
 }
 .footer_icon {
 	fill: #000;
