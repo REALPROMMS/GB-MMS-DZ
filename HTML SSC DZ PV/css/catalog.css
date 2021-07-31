@@ -89,13 +89,11 @@ ul.catalog_header_list li + li:before {
 	margin-right: 10px;
 	color: #6f6e6e;
 }
-.filter_other_title_active {
-	font-weight: normal;
-	margin-right: 10px;
-	color: #f16d7f;
-}
 .filter_other_title:hover {
 	color: #f16d7f;
+}
+.filter_details_wrap:hover .filter_icon {
+	fill: #f16d7f;
 }
 .filter_details_wrap svg {
 	fill: #000;
@@ -112,6 +110,7 @@ ul.catalog_header_list li + li:before {
 	width: 360px;
 	background-color: #f8f8f8;
 	margin-bottom: 30px;
+	position: relative;
 }
 .catalog_cart_image_wrap {
 	background: #3a3838;
@@ -179,4 +178,65 @@ ul.catalog_header_list li + li:before {
 .pagination a.active {
 	color: #ef5b70;
 	border-radius: 5px;
+}
+.add-box {
+	position: absolute;
+	top: 185px;
+	display: none;
+	justify-content: center;
+	width: 100%;
+}
+.catalog_cart:hover .add-box {
+	display: flex;
+}
+.add {
+	border: 1px solid #ffffff;
+	padding: 10px;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.add:hover {
+	box-shadow: 0 0 10px #f16d7f;
+}
+.add-text {
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: 700;
+	margin-left: 8px;
+}
+.catalog_cart:hover {
+	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+.catalog_cart:hover .catalog_img {
+	filter: brightness(30%);
+}
+.box_filter {
+	background-color: #fff;
+	padding: 10px;
+	position: absolute;
+	display: none;
+}
+.box_menu_filter {
+	display: flex;
+	flex-direction: column;
+}
+.filter_details_heading:hover .box_filter {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100px;
+}
+.box_menu_filter_button {
+	border: none;
+	margin-top: 5px;
+}
+.box_menu_filter_button:hover input {
+	color: white;
+	background-color: #f16d7f;
+	border-radius: 5px;
+}
+label:hover {
+	color: #f16d7f;
 }

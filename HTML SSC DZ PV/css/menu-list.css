@@ -1,0 +1,45 @@
+.img_head {
+	padding-right: 20px;
+	text-decoration: none;
+}
+.product_filter_icon {
+	fill: black;
+}
+.product_filter_icon:hover {
+	fill: #f16d7f;
+	transition: all 0.2s linear;
+}
+
+.mega-filter {
+	border: 1px solid #000;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	position: absolute;
+	display: none;
+	flex-direction: column;
+}
+.menu-item {
+	padding-top: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.menu-filter:hover .mega-filter {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100px;
+}
+.sub {
+	border: none;
+	margin-top: 5px;
+}
+.sub:hover input {
+	color: white;
+	background-color: #f16d7f;
+	border-radius: 5px;
+}
+label:hover {
+	color: #f16d7f;
+}

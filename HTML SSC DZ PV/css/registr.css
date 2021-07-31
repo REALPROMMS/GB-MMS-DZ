@@ -102,7 +102,7 @@ li {
 	margin-bottom: 15px;
 }
 .registr_content ul li:before {
-	content: url(photo/registration/arrow_regist.svg);
+	content: url(/photo/registration/arrow_regist.svg);
 	display: block;
 	margin-right: 23px;
 }

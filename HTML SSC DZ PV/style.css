@@ -111,35 +111,15 @@ body {
 .menu-item {
 	padding-top: 5px;
 }
-.mega-box:before {
-	content: "";
-	display: block;
-	width: 12px;
-	height: 12px;
-	background-color: white;
-	position: absolute;
-	transform: rotate(45deg);
-	top: -7.3px;
-	left: 9px;
-	border-left: 1px solid black;
-	border-top: 1px solid black;
-}
 .menu-box:hover .mega-box {
 	display: flex;
 	flex-direction: column;
-}
-.close-block {
-	display: block;
 	position: absolute;
-	top: 8px;
-	right: 8px;
-	width: 12px;
-	height: 12px;
-	background-image: url(photo/header/close.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	cursor: pointer;
 }
+.filter_left {
+	position: relative;
+}
+
 .middle_main {
 	background-color: #f1e4e6;
 	height: 764px;
@@ -171,12 +151,11 @@ body {
 .middle_category {
 	position: relative;
 }
-spanCARD {
+.card_text {
 	font-size: 15px;
 	line-height: 19px;
 	text-align: center;
 }
-
 .category_element_one {
 	display: flex;
 	justify-content: space-between;
@@ -185,9 +164,21 @@ spanCARD {
 	padding-right: 230px;
 	padding-bottom: 30px;
 }
+.card {
+	background: #060608;
+	background: linear-gradient(0deg, #060608 38%, rgba(241, 109, 127, 0.93041) 100%);
+	transition: transform 0.2s linear;
+}
+.card:hover .card_item_shadow {
+	transform: translate3d(-10px, -10px, 0);
+	transition: transform 0.2s linear;
+	opacity: 0.3;
+	box-shadow: 10px 10px 10px #f16d7f;
+}
 .category_element_two {
 	padding-left: 230px;
 	padding-bottom: 96px;
+	display: flex;
 }
 .text_element_women {
 	position: absolute;
@@ -199,7 +190,7 @@ spanCARD {
 }
 .text_element_man {
 	position: absolute;
-	padding: 105px 125px 105px 125px;
+	padding: 105px 105px 105px 125px;
 	text-align: center;
 	color: #ffffff;
 	font-size: 24px;
@@ -248,6 +239,13 @@ spanCARD {
 .featured_item {
 	width: 360px;
 	margin-bottom: 30px;
+	position: relative;
+}
+.featured_item:hover {
+	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+.featured_item:hover .featured_image {
+	filter: brightness(30%);
 }
 .featured_item_content {
 	padding: 25px 17px 20px;
@@ -274,6 +272,33 @@ spanCARD {
 	font-size: 16px;
 	line-height: 19px;
 	color: #f16d7f;
+}
+.add-box {
+	position: absolute;
+	top: 185px;
+	display: none;
+	justify-content: center;
+	width: 100%;
+}
+.featured_item:hover .add-box {
+	display: flex;
+}
+.add {
+	border: 1px solid #ffffff;
+	padding: 10px;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.add:hover {
+	box-shadow: 0 0 10px #f16d7f;
+}
+.add-text {
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: 700;
+	margin-left: 8px;
 }
 .button {
 	border: 1px solid #ff6a6a;
