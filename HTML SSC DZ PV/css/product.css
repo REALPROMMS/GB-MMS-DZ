@@ -9,6 +9,7 @@ body {
 .container {
 	width: 1600px;
 	margin: 0 auto;
+	font-family: "Lato", sans-serif;
 }
 .product_header_color {
 	background-color: #ebebeb;
