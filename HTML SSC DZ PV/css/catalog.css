@@ -53,11 +53,57 @@ ul.catalog_header_list li + li:before {
 	display: flex;
 }
 .clothing_filter {
-	max-width: 355px;
-}
-.filter_details_heading_main {
 	margin-right: 325px;
 }
+.filter_details-wrap {
+	position: absolute;
+	z-index: 10;
+	padding: 25px 15px 15px 25px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px #f16d7f;
+}
+.main_filter {
+	width: 355px;
+}
+.filter_item_title {
+	color: #6f6e6e;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 17px;
+	border-left: 5px solid #f16d7f;
+	border-bottom: 1px solid #ebebeb;
+	padding: 10px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.filter_item_title:hover {
+	color: #f16d7f;
+}
+.filter_list_inner[open] > .filter_item_title {
+	color: #f16d7f;
+}
+.filter_list {
+	padding: 24px 12px;
+}
+.filter_item-link {
+	text-decoration: none;
+	color: #6f6e6e;
+	background: transparent;
+	border: none;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 400;
+	text-transform: capitalize;
+	transition: 0.2s;
+}
+.filter_item-link:hover {
+	color: #f16d7f;
+	text-decoration: underline;
+}
+.filter_item {
+	margin-bottom: 11px;
+}
+
 .filter_details_heading {
 	margin-right: 35px;
 }
@@ -70,6 +116,7 @@ ul.catalog_header_list li + li:before {
 }
 .filter_details_wrap:hover {
 	color: #f16d7f;
+	transition: all 0.2s linear;
 }
 .filter_title {
 	font-weight: 700;
@@ -82,9 +129,11 @@ ul.catalog_header_list li + li:before {
 }
 .filter_other_title:hover {
 	color: #f16d7f;
+	transition: all 0.2s linear;
 }
 .filter_details_wrap:hover .filter_icon {
 	fill: #f16d7f;
+	transition: all 0.2s linear;
 }
 .filter_details_wrap svg {
 	fill: #000;
@@ -129,6 +178,7 @@ label {
 	border-radius: 5px;
 	transform: scale(1.5);
 	cursor: pointer;
+	transition: all 0.2s linear;
 }
 
 .catalog_carts {
@@ -207,6 +257,7 @@ label {
 
 .catalog_cart:hover .add-box {
 	display: flex;
+	transition: all 0.2s linear;
 }
 .catalog_cart:hover {
 	box-shadow: 0 5px 8px #f16d7f;
