@@ -1,23 +1,11 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-body {
-	font-family: sans-serif;
-}
-.container {
-	width: 1600px;
-	margin: 0 auto;
-	font-family: "Lato", sans-serif;
-}
 .catalog_header_color {
-	background-color: #ebebeb;
+	background-color: #f8f3f4;
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
 .catalog_header {
-	padding-left: 230px;
+	display: flex;
+	justify-content: space-between;
 }
 .catalog_header_title {
 	color: #f16d7f;
@@ -25,10 +13,7 @@ body {
 	line-height: 29px;
 	font-weight: normal;
 }
-.registr__padding {
-	padding-left: 230px;
-	padding-right: 230px;
-}
+
 .registr {
 	padding-top: 65px;
 	padding-bottom: 96px;
@@ -55,6 +40,22 @@ body {
 	margin-bottom: 20px;
 	text-align: left;
 	padding: 13px 17px;
+}
+.registr_form_radio {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 33px;
+}
+.registr_form_radio input {
+	margin-right: 10px;
+}
+.registr_form_radio label {
+	margin-right: 20px;
+	font-size: 13px;
+	line-height: 16px;
+	color: #000;
+	font-weight: 300;
 }
 .registr_form p {
 	font-size: 13px;
@@ -107,6 +108,12 @@ li {
 	display: block;
 	margin-right: 23px;
 }
+.registr_content ul li:hover {
+	transition: all 0.2s linear;
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
 .registr_form_button {
 	padding: 17px 29px;
 	border: 1px solid white;
@@ -130,4 +137,5 @@ li {
 	background-color: white;
 	border: 1px solid #000;
 	transition: all 0.2s linear;
+	transform: scale(1.05);
 }

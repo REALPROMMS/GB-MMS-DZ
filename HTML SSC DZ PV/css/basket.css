@@ -1,24 +1,15 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+.catalog {
+	padding-bottom: 96px;
 }
-body {
-	font-family: sans-serif;
-	font-family: "Lato", sans-serif;
-}
-.container {
-	width: 1600px;
-	margin: 0 auto;
-	font-family: "Lato", sans-serif;
-}
+
 .shopping_header_color {
-	background-color: #ebebeb;
+	background-color: #f8f3f4;
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
 .shopping_header {
-	padding-left: 230px;
+	display: flex;
+	justify-content: space-between;
 }
 .shopping_header_title {
 	color: #f16d7f;
@@ -26,12 +17,11 @@ body {
 	line-height: 29px;
 	font-weight: normal;
 }
+
 .shopping_content {
 	display: flex;
 	justify-content: space-between;
-	padding-left: 230px;
-	padding-right: 230px;
-	margin-top: 96px;
+	margin-top: 100px;
 	margin-bottom: 30px;
 }
 .shopping_content_item {
@@ -41,10 +31,7 @@ body {
 	position: relative;
 }
 .shopping_content_item_description {
-	padding-left: 32px;
-	padding-bottom: 60px;
-	padding-right: 97px;
-	padding-top: 22px;
+	padding: 22px 150px 62px 31px;
 }
 .shopping_content_item_name {
 	font-size: 24px;
@@ -64,6 +51,7 @@ body {
 .shopping_content_item_description svg:hover {
 	fill: #ef5b70;
 	transition: all 0.2s linear;
+	transform: scale(1.2);
 }
 .shopping_content_item_info {
 	font-size: 22px;
@@ -77,6 +65,12 @@ body {
 .shopping_content_item_info p {
 	margin-bottom: 6px;
 }
+.shopping_content_item_info p:hover {
+	transform: scale(1.05);
+	transition: scale 0.2s linear;
+	cursor: pointer;
+}
+
 .shopping_content_item_buttons {
 	display: flex;
 	justify-content: space-between;
@@ -86,6 +80,7 @@ body {
 	background: #ef5b70;
 	outline: none;
 	transition: all 0.2s linear;
+	transform: scale(1.05);
 }
 .shopping_content_item_button {
 	padding: 16px 40px;
@@ -97,7 +92,9 @@ body {
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
+	transition: all 0.2s linear;
 }
+
 .shopping_content_info {
 	display: flex;
 	flex-direction: column;
@@ -110,7 +107,6 @@ body {
 	line-height: 21px;
 	color: #222;
 	font-weight: 300;
-	text-transform: uppercase;
 	margin-bottom: 20px;
 }
 .shopping_content_info_input {
@@ -129,13 +125,16 @@ body {
 	outline: 1px solid #4a4a4a;
 	border: none;
 	margin-bottom: 60px;
+	transition: all 0.2s linear;
 }
 .shopping_content_info_button:hover {
 	color: white;
 	background: #ef5b70;
 	outline: none;
 	transition: all 0.2s linear;
+	transform: scale(1.05);
 }
+
 .shopping_content_info_total {
 	background: #f5f3f3;
 	padding: 41px 44px;
@@ -190,4 +189,5 @@ body {
 	background: #ef5b70;
 	outline: none;
 	transition: all 0.2s linear;
+	transform: scale(1.05);
 }

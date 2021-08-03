@@ -1,6 +1,5 @@
 <svg width="360" height="260" viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect width="360" height="260" fill="url(#pattern0)"/>
-<path d="M360 0H0V260H360V0Z" fill="#211616" fill-opacity="0.7"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="translate(0 -0.0884615) scale(0.00277778 0.00384615)"/>
