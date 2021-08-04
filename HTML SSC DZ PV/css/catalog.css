@@ -30,6 +30,7 @@
 .catalog_header_menu_link:hover {
 	color: #f16d7f;
 	transition: all 0.2s linear;
+	text-decoration: underline;
 }
 .catalog_header_menu_link {
 	font-weight: 300;
@@ -160,10 +161,9 @@ li {
 .size_input {
 	margin-right: 9px;
 }
-label {
-	cursor: pointer;
+label:hover {
+	color: #f16d7f;
 }
-
 .btn_menu_filter_button {
 	border: none;
 	margin: 3px 3px 3px 0px;
@@ -176,7 +176,7 @@ label {
 	color: white;
 	background-color: #f16d7f;
 	border-radius: 5px;
-	transform: scale(1.5);
+	transform: scale(1.3);
 	cursor: pointer;
 	transition: all 0.2s linear;
 }
