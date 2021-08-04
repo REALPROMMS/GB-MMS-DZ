@@ -289,7 +289,7 @@ label:hover {
 }
 .product_item:hover .product_img {
 	filter: brightness(30%);
-	transition: all 0.2s linear;
+	transition: all 0.4s linear;
 }
 
 /* .add-box {

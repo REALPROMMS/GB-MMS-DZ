@@ -271,7 +271,7 @@
 }
 .featured_item:hover .featured_image {
 	filter: brightness(30%);
-	transition: all 0.2s linear;
+	transition: all 0.4s linear;
 }
 .featured_item_content {
 	padding: 25px 17px 20px;

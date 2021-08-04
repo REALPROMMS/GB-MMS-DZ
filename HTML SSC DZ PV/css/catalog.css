@@ -265,7 +265,7 @@ label:hover {
 }
 .catalog_cart:hover .catalog_img {
 	filter: brightness(30%);
-	transition: all 0.2s linear;
+	transition: all 0.4s linear;
 }
 
 .pagination_container {
