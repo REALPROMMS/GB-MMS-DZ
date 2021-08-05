@@ -16,7 +16,7 @@
 	margin: 0 auto
 
 .header
-	background: #222222
+	background: $BG-color
 	position: relative
 	padding: 18px 0
 
@@ -34,11 +34,11 @@
 
 .header_icon
 	fill: white
-	transition: all 0.2s linear
+	transition: $transition
 
 .header_icon:hover
 	fill: $btn-color
-	transition: all 0.2s linear
+	transition: $transition
 
 .header__right
 	align-items: center
@@ -82,7 +82,7 @@
 
 .menu__list ul .menu-link:hover
 	text-decoration: none
-	transition: all 0.2s linear
+	transition: $transition
 
 .menu__list ul:not(:last-child)
 	margin-bottom: 20px
@@ -100,7 +100,7 @@
 	line-height: 1.2
 	color: #6f6e6e
 	font-weight: 400
-	transition: all 0.2s linear
+	transition: $transition
 	text-decoration: none
 
 .menu__list ul a:hover
@@ -124,7 +124,7 @@
 	cursor: pointer
 	border: none
 	margin-bottom: 5px
-	transition: all 0.2s linear
+	transition: $transition
 	fill: #6f6e6e
 	margin-left: 180px
 
@@ -145,7 +145,7 @@
 	align-items: center
 	height: 100%
 	justify-content: flex-end
-	background-image: url(photo/category/intro.svg)
+	background-image: url(../photo/category/intro.svg)
 	background-repeat: no-repeat
 	background-position: -208px bottom
 	z-index: 5
@@ -245,7 +245,7 @@
 .featured_title
 	font-size: 30px
 	line-height: 36px
-	color: #222222
+	color: $BG-color
 	margin-bottom: 6px
 
 .featured_text
@@ -267,7 +267,7 @@
 
 .featured_item:hover
 	box-shadow: 0 5px 8px $btn-color
-	transition: all 0.2s linear
+	transition: $transition
 
 .featured_item:hover .featured_image
 	filter: brightness(30%)
@@ -320,7 +320,7 @@
 .add:hover
 	box-shadow: 0 0 10px $btn-color
 	transform: scale(1.2)
-	transition: all 0.2s linear
+	transition: $transition
 
 .add-text
 	font-size: 14px
@@ -329,33 +329,33 @@
 	margin-left: 8px
 
 .button
-	border: 1px solid #ff6a6a
+	border: 1px solid $btn-color
 	font-size: 16px
 	line-height: 19px
 	color: #f26376
 	padding: 15px 40px
 	text-decoration: none
-	transition: all 0.2s linear
+	transition: $transition
 
 .button_main
 	display: flex
 	justify-content: center
 	width: 100%
 	margin-top: 58px
-	transition: all 0.2s linear
+	transition: $transition
 
 .button:hover
 	background: $btn-color
-	border: 1px solid #ff6a6a
+	border: 1px solid $btn-color
 	color: #ffffff
-	transition: all 0.2s linear
+	transition: $transition
 
 .button_main:hover
 	transform: scale(1.2)
-	transition: all 0.2s linear
+	transition: $transition
 
 .footer_top
-	background: #222224
+	background: $BG-color
 
 .footer_top_quality
 	display: flex
@@ -379,7 +379,7 @@
 
 .footer_top_info_logo:hover
 	transform: scale(1.5)
-	transition: all 0.2s linear
+	transition: $transition
 
 .footer_top_info_title
 	margin-bottom: 16px
@@ -467,14 +467,14 @@
 	border-top-right-radius: 20px
 	border-bottom-right-radius: 20px
 	cursor: pointer
-	transition: all 0.2s linear
+	transition: $transition
 
 .subscribe_form_button:hover
 	color: black
 	background: #e1e1e1
 
 .footer_bot
-	background: #222224
+	background: $BG-color
 
 .footer_wrap
 	padding: 24px 0
@@ -497,18 +497,18 @@
 	display: flex
 	align-items: center
 	justify-content: center
-	transition: all 0.2s linear
+	transition: $transition
 
 .social_media_item:not(:last-child)
 	margin-right: 7px
 
 .social_media_item:hover .footer_icon
 	fill: #fff
-	transition: all 0.2s linear
+	transition: $transition
 
 .social_media_item:hover
 	background: $btn-color
-	transition: all 0.2s linear
+	transition: $transition
 	transform: scale(1.1)
 
 .footer_icon

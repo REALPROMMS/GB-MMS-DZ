@@ -1,3 +1,5 @@
+@import "vars"
+
 .catalog
 	padding-bottom: 96px
 
@@ -11,7 +13,7 @@
 	justify-content: space-between
 
 .shopping_header_title
-	color: #f16d7f
+	color: $btn-color
 	font-size: 24px
 	line-height: 29px
 	font-weight: normal
@@ -43,12 +45,12 @@
 	position: absolute
 	top: 25px
 	right: 25px
-	transition: all 0.1s linear
+	transition: $transition
 	cursor: pointer
 
 .shopping_content_item_description svg:hover
-	fill: #ef5b70
-	transition: all 0.2s linear
+	fill: $btn-color
+	transition: $transition
 	transform: scale(1.2)
 
 .shopping_content_item_info
@@ -58,7 +60,7 @@
 	font-weight: 400
 
 .shopping_content_item_info_price
-	color: #ef5b70
+	color: $btn-color
 
 .shopping_content_item_info p
 	margin-bottom: 6px
@@ -74,9 +76,9 @@
 
 .shopping_content_item_button:hover
 	color: white
-	background: #ef5b70
+	background: $btn-color
 	outline: none
-	transition: all 0.2s linear
+	transition: $transition
 	transform: scale(1.05)
 
 .shopping_content_item_button
@@ -89,7 +91,7 @@
 	border: none
 	background-color: transparent
 	cursor: pointer
-	transition: all 0.2s linear
+	transition: $transition
 
 .shopping_content_info
 	display: flex
@@ -121,13 +123,13 @@
 	outline: 1px solid #4a4a4a
 	border: none
 	margin-bottom: 60px
-	transition: all 0.2s linear
+	transition: $transition
 
 .shopping_content_info_button:hover
 	color: white
-	background: #ef5b70
+	background: $btn-color
 	outline: none
-	transition: all 0.2s linear
+	transition: $transition
 	transform: scale(1.05)
 
 .shopping_content_info_total
@@ -155,7 +157,7 @@
 
 .shopping_content_info_total h4 span
 	font-weight: bold
-	color: #f16d7f
+	color: $btn-color
 	margin-left: 20px
 
 .shopping_content_info_total div
@@ -174,14 +176,14 @@
 	font-weight: 300
 	border: none
 	cursor: pointer
-	transition: all 0.2s linear
+	transition: $transition
 	background-color: transparent
 	outline: 1px solid #4a4a4a
 	color: #4a4a4a
 
 .shopping_content_info_total button:hover
 	color: white
-	background: #ef5b70
+	background: $btn-color
 	outline: none
-	transition: all 0.2s linear
+	transition: $transition
 	transform: scale(1.05)

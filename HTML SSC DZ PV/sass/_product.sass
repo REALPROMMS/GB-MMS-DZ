@@ -1,3 +1,5 @@
+@import "vars"
+
 .product
 	margin-bottom: 150px
 
@@ -14,14 +16,14 @@
 	font-weight: normal
 	font-size: 24px
 	line-height: 29px
-	color: #f16d7f
+	color: $btn-color
 
 .product_header_menu
 	display: inline
 
 .product_header_menu_link:hover
-	color: #f16d7f
-	transition: all 0.2s linear
+	color: $btn-color
+	transition: $transition
 	text-decoration: underline
 
 .product_header_menu_link
@@ -50,8 +52,8 @@ ul.product_header_list li + li:before
 	fill: #000
 
 .arrow_icon:hover
-	fill: #ef5b70
-	transition: all 0.2s linear
+	fill: $btn-color
+	transition: $transition
 	transform: scale(1.2)
 
 .product_box
@@ -69,7 +71,7 @@ ul.product_header_list li + li:before
 
 .product_info h3
 	font-size: 14px
-	color: #f16d7f
+	color: $btn-color
 	margin-bottom: 12px
 	margin-top: 60px
 	font-weight: 300
@@ -98,7 +100,7 @@ ul.product_header_list li + li:before
 	font-weight: 300
 	font-size: 24px
 	line-height: 29px
-	color: #ef5b70
+	color: $btn-color
 
 .border_grey
 	border: 1px solid #eaeaea
@@ -128,22 +130,22 @@ ul.product_header_list li + li:before
 	color: #6f6e6e
 
 .product_filter_item_text:hover
-	color: #ef5b70
-	transition: all 0.2s linear
+	color: $btn-color
+	transition: $transition
 
 .product_filter_icon
 	fill: #6f6e6e
 
 .product_filter_item_box:hover .product_filter_icon
-	fill: #ef5b70
-	transition: all 0.2s linear
+	fill: $btn-color
+	transition: $transition
 
 .product_filter-wrap
 	position: absolute
 	z-index: 10
 	padding: 25px 15px 15px 25px
 	background-color: #fff
-	box-shadow: 0 0 10px #ef5b70
+	box-shadow: 0 0 10px $btn-color
 
 .product_filter-wrap ul,
 li
@@ -166,7 +168,7 @@ li
 	margin-right: 0
 
 label:hover
-	color: #f16d7f
+	color: $btn-color
 
 .product_menu_filter_button
 	border: none
@@ -178,11 +180,11 @@ label:hover
 
 .product_menu_filter_button:hover input
 	color: white
-	background-color: #f16d7f
+	background-color: $btn-color
 	border-radius: 5px
 	transform: scale(1.3)
 	cursor: pointer
-	transition: all 0.2s linear
+	transition: $transition
 
 .filter_input_btn
 	border-radius: 5px
@@ -201,15 +203,15 @@ label:hover
 	color: #f26376
 	border: 1px solid #f26376
 	cursor: pointer
-	transition: all 0.2s linear
+	transition: $transition
 	display: flex
 	align-items: center
 
 .product_button_link:hover
-	background: #f16d7f
-	transition: all 0.2s linear
+	background: $btn-color
+	transition: $transition
 	transform: scale(1.2)
-	transition: all 0.2s linear
+	transition: $transition
 
 .product_button_image
 	margin-right: 20px
@@ -217,7 +219,7 @@ label:hover
 
 .product_button:hover .product_button_image
 	fill: white
-	transition: all 0.2s linear
+	transition: $transition
 
 .product_button_text
 	font-size: 16px
@@ -226,7 +228,7 @@ label:hover
 
 .product_button:hover .product_button_text
 	color: white
-	transition: all 0.2s linear
+	transition: $transition
 
 .product_items
 	display: flex
@@ -271,14 +273,14 @@ label:hover
 .product_item_price
 	font-size: 16px
 	line-height: 19px
-	color: #f16d7f
+	color: $btn-color
 
 .product_item:hover .add-box
 	display: flex
 
 .product_item:hover
 	box-shadow: 0 5px 8px #f26376
-	transition: all 0.2s linear
+	transition: $transition
 
 .product_item:hover .product_img
 	filter: brightness(30%)
@@ -293,8 +295,8 @@ label:hover
 	align-items: center
 
 .add:hover
-	box-shadow: 0 0 10px #f16d7f
-	transition: all 0.2s linear
+	box-shadow: 0 0 10px $btn-color
+	transition: $transition
 
 .add-text
 	font-size: 14px

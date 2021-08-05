@@ -1,3 +1,5 @@
+@import "vars"
+
 .catalog_header_color
 	background-color: #f8f3f4
 	padding-top: 60px
@@ -8,7 +10,7 @@
 	justify-content: space-between
 
 .catalog_header_title
-	color: #f16d7f
+	color: $btn-color
 	font-size: 24px
 	line-height: 29px
 	font-weight: normal
@@ -107,14 +109,14 @@ li
 	margin-right: 23px
 
 .registr_content ul li:hover
-	transition: all 0.2s linear
+	transition: $transition
 	transform: scale(1.05)
 	cursor: pointer
 
 .registr_form_button
 	padding: 17px 29px
 	border: 1px solid white
-	background-color: #f16d7f
+	background-color: $btn-color
 	font-size: 14px
 	line-height: 17px
 	color: #fff
@@ -127,11 +129,11 @@ li
 
 .registr_form_button:hover svg
 	fill: #000
-	transition: all 0.2s linear
+	transition: $transition
 
 .registr_form_button:hover
 	color: #000
 	background-color: white
 	border: 1px solid #000
-	transition: all 0.2s linear
+	transition: $transition
 	transform: scale(1.05)

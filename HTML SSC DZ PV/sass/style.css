@@ -318,14 +318,14 @@ label:hover {
 
 .pagination a:hover {
   color: white;
-  background: #ef5b70;
+  background: #f16d7f;
   border-radius: 10px;
   transition: background 0.2s linear;
 }
 
 .pagination a.active:hover {
   color: white;
-  background: #ef5b70;
+  background: #f16d7f;
   border-radius: 10px;
   transition: background 0.2s linear;
 }
@@ -342,7 +342,7 @@ label:hover {
 }
 
 .pagination a.active {
-  color: #ef5b70;
+  color: #f16d7f;
   border-radius: 5px;
 }
 
@@ -560,12 +560,12 @@ li {
   position: absolute;
   top: 25px;
   right: 25px;
-  transition: all 0.1s linear;
+  transition: all 0.2s linear;
   cursor: pointer;
 }
 
 .shopping_content_item_description svg:hover {
-  fill: #ef5b70;
+  fill: #f16d7f;
   transition: all 0.2s linear;
   transform: scale(1.2);
 }
@@ -578,7 +578,7 @@ li {
 }
 
 .shopping_content_item_info_price {
-  color: #ef5b70;
+  color: #f16d7f;
 }
 
 .shopping_content_item_info p {
@@ -598,7 +598,7 @@ li {
 
 .shopping_content_item_button:hover {
   color: white;
-  background: #ef5b70;
+  background: #f16d7f;
   outline: none;
   transition: all 0.2s linear;
   transform: scale(1.05);
@@ -655,7 +655,7 @@ li {
 
 .shopping_content_info_button:hover {
   color: white;
-  background: #ef5b70;
+  background: #f16d7f;
   outline: none;
   transition: all 0.2s linear;
   transform: scale(1.05);
@@ -719,7 +719,7 @@ li {
 
 .shopping_content_info_total button:hover {
   color: white;
-  background: #ef5b70;
+  background: #f16d7f;
   outline: none;
   transition: all 0.2s linear;
   transform: scale(1.05);
@@ -788,7 +788,7 @@ ul.product_header_list li + li:before {
 }
 
 .arrow_icon:hover {
-  fill: #ef5b70;
+  fill: #f16d7f;
   transition: all 0.2s linear;
   transform: scale(1.2);
 }
@@ -845,7 +845,7 @@ ul.product_header_list li + li:before {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  color: #ef5b70;
+  color: #f16d7f;
 }
 
 .border_grey {
@@ -880,7 +880,7 @@ ul.product_header_list li + li:before {
 }
 
 .product_filter_item_text:hover {
-  color: #ef5b70;
+  color: #f16d7f;
   transition: all 0.2s linear;
 }
 
@@ -889,7 +889,7 @@ ul.product_header_list li + li:before {
 }
 
 .product_filter_item_box:hover .product_filter_icon {
-  fill: #ef5b70;
+  fill: #f16d7f;
   transition: all 0.2s linear;
 }
 
@@ -898,7 +898,7 @@ ul.product_header_list li + li:before {
   z-index: 10;
   padding: 25px 15px 15px 25px;
   background-color: #fff;
-  box-shadow: 0 0 10px #ef5b70;
+  box-shadow: 0 0 10px #f16d7f;
 }
 
 .product_filter-wrap ul,
@@ -1274,7 +1274,7 @@ label:hover {
   align-items: center;
   height: 100%;
   justify-content: flex-end;
-  background-image: url(photo/category/intro.svg);
+  background-image: url(../photo/category/intro.svg);
   background-repeat: no-repeat;
   background-position: -208px bottom;
   z-index: 5;
@@ -1495,7 +1495,7 @@ label:hover {
 }
 
 .button {
-  border: 1px solid #ff6a6a;
+  border: 1px solid #f16d7f;
   font-size: 16px;
   line-height: 19px;
   color: #f26376;
@@ -1514,7 +1514,7 @@ label:hover {
 
 .button:hover {
   background: #f16d7f;
-  border: 1px solid #ff6a6a;
+  border: 1px solid #f16d7f;
   color: #ffffff;
   transition: all 0.2s linear;
 }
@@ -1525,7 +1525,7 @@ label:hover {
 }
 
 .footer_top {
-  background: #222224;
+  background: #222222;
 }
 
 .footer_top_quality {
@@ -1664,7 +1664,7 @@ label:hover {
 }
 
 .footer_bot {
-  background: #222224;
+  background: #222222;
 }
 
 .footer_wrap {
