@@ -1143,7 +1143,7 @@ label:hover {
 }
 
 .header_icon {
-  fill: white;
+  fill: #fff;
   transition: all 0.2s linear;
 }
 
@@ -1573,7 +1573,7 @@ label:hover {
 }
 
 .subscribe {
-  background-image: url(photo/subscribe/BG.svg);
+  background-image: url(../photo/subscribe/BG.svg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 87px;
@@ -1711,4 +1711,249 @@ label:hover {
 
 .footer_icon {
   fill: #000;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .intro_wrap {
+    background-size: 390px;
+    background-position: -10px bottom;
+  }
+
+  .intro {
+    height: 368px;
+    margin-bottom: 20px;
+  }
+
+  .intro_text {
+    margin-right: 32px;
+    width: 100%;
+    max-width: 312px;
+  }
+
+  .intro_title {
+    font-size: 24px;
+  }
+
+  .decor_brand {
+    font-size: 38px;
+    font-weight: 900;
+  }
+
+  .menu__list {
+    padding: 16px 17px 45px 25px;
+    right: 5px;
+  }
+
+  .menu__list h4 {
+    font-size: 12px;
+    line-height: 1.2;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  .menu__list ul {
+    font-size: 12px;
+    line-height: 1.2;
+    color: #F16D7F;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .menu__list ul:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .menu__list ul li {
+    margin-top: 10px;
+    margin-left: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding-right: 30px;
+  }
+
+  .menu__list ul a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #6F6E6E;
+    font-weight: 400;
+    transition: all 0.2s linear;
+    text-decoration: none;
+  }
+
+  .menu__list a:hover {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #F16D7F;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+
+  .category {
+    margin-bottom: 154px;
+  }
+
+  .category_wrap {
+    justify-content: space-between;
+  }
+
+  .category_item_picture {
+    width: 100%;
+    height: 100%;
+  }
+
+  .category_item:not(:last-child) {
+    width: 232px;
+    height: 167px;
+    margin-bottom: 20px;
+  }
+
+  .category_item:last-child {
+    height: 116px;
+  }
+
+  .featured {
+    margin-bottom: 65px;
+  }
+
+  .featured_items {
+    justify-content: space-around;
+  }
+
+  .featured_text {
+    margin-bottom: 72px;
+  }
+
+  .featured_item {
+    margin-bottom: 17px;
+  }
+
+  .button_main {
+    margin-top: 32px;
+  }
+
+  .footer_top_quality {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_top_info {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  .footer_top_info:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
+  .subscribe {
+    padding-top: 64px;
+    padding-bottom: 140px;
+    background-position-x: -370px;
+  }
+
+  .subscribe_block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe_block_content {
+    margin-bottom: 48px;
+  }
+
+  .subscribe_block_form_title {
+    margin-bottom: 27px;
+  }
+}
+@media (max-width: 768px) {
+  .category {
+    margin-bottom: 96px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header_item {
+    display: none;
+  }
+
+  .menu {
+    margin-right: 0;
+  }
+
+  .intro {
+    margin-bottom: 64px;
+  }
+
+  .intro_wrap {
+    background-image: none;
+  }
+
+  .intro_text {
+    margin-left: 40px;
+  }
+
+  .intro_title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .decor_brand {
+    font-weight: 900;
+    font-size: 38px;
+  }
+
+  .category_item:not(:last-child) {
+    width: 343px;
+    height: 248px;
+    margin-bottom: 32px;
+  }
+
+  .category_item:last-child {
+    height: 111px;
+    width: 100%;
+  }
+
+  .category {
+    margin-bottom: 64px;
+  }
+
+  .featured {
+    margin-bottom: 96px;
+  }
+
+  .featured_text {
+    margin-bottom: 64px;
+  }
+
+  .featured_items {
+    padding-left: 2px;
+  }
+
+  .footer_top_quality {
+    width: 347px;
+  }
+
+  .subscribe {
+    padding-bottom: 110px;
+  }
+
+  .footer_wrap {
+    flex-direction: column-reverse;
+    padding: 44px 0 10px 0;
+  }
+
+  .footer_copy {
+    padding-top: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
