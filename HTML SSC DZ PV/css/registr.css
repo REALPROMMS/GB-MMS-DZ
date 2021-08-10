@@ -50,6 +50,13 @@
 .registr_form_radio input {
 	margin-right: 10px;
 }
+.registr_form_radio:last-child {
+	display: none;
+}
+.registr_form_radio label:not:(:last-child) {
+	display: inline;
+	display: none;
+}
 .registr_form_radio label {
 	margin-right: 20px;
 	font-size: 13px;

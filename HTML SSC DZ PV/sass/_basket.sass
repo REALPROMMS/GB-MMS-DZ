@@ -17,6 +17,12 @@
 	font-size: 24px
 	line-height: 29px
 	font-weight: normal
+	cursor: pointer
+
+.shopping_header_color:hover .shopping_header_title
+	transform: translateX(620px)
+	transition: all 1.2s linear
+	color: darken($btn-color, 70%)
 
 .shopping_content
 	display: flex
@@ -29,6 +35,14 @@
 	box-shadow: 17px 19px 24px rgb(0 0 0 / 13%)
 	margin-bottom: 40px
 	position: relative
+
+.shopping_content_item:hover
+	transform: scale(1.05)
+	box-shadow: 17px 19px 24px $btn-color
+	transition: $transition
+
+.shopping_content_item-img
+	height: 100%
 
 .shopping_content_item_description
 	padding: 22px 150px 62px 31px
@@ -69,6 +83,11 @@
 	transform: scale(1.05)
 	transition: scale 0.2s linear
 	cursor: pointer
+
+.shopping_content_item_info_input
+	font-size: 20px
+	color: $btn-color
+	outline: none
 
 .shopping_content_item_buttons
 	display: flex
@@ -187,3 +206,22 @@
 	outline: none
 	transition: $transition
 	transform: scale(1.05)
+
+@media (max-width: 1024px)
+
+	.shopping_content
+		flex-direction: column
+
+	.shopping_content_item
+		margin-bottom: 60px
+
+	.shopping_content_item_buttons
+		justify-content: space-around
+		padding-left: 70px
+		padding-right: 70px
+		padding-bottom: 60px
+
+	.shopping_content_info
+		display: flex
+
+@media (max-width: 375px)
