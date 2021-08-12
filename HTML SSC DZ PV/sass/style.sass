@@ -24,7 +24,7 @@
 	display: flex
 	justify-content: space-between
 
-.header_left
+.header__left
 	display: flex
 	align-items: center
 
@@ -126,7 +126,7 @@
 	margin-bottom: 5px
 	transition: $transition
 	fill: #6f6e6e
-	margin-left: 180px
+	margin-left: auto
 
 .btn-menu__close:hover
 	transform: scale(1.2)
@@ -176,37 +176,37 @@
 	flex-wrap: wrap
 	justify-content: space-between
 
-.category_item
+.category__item
 	position: relative
 	background-color: $btn-color
 	cursor: pointer
 
-.category_item:not(:last-child)
+.category__item:not(:last-child)
 	width: 360px
 	height: 260px
 	margin-bottom: 30px
 
-.category_item:last-child
+.category__item:last-child
 	width: 100%
 	height: 180px
 
-.category_item_picture
+.category__item_picture
 	display: block
 	transition: opacity 0.2s linear
 	width: 100%
 
-.category_item_picture_wrap
+.category__item_picture_wrap
 	background: #060608
 	background: linear-gradient(0deg, #060608 38%, rgba(241, 109, 127, 0.93041) 100%)
 	transition: transform 0.2s linear
 
-.category_item:hover .category_item_picture_wrap
+.category__item:hover .category__item_picture_wrap
 	transform: translate3d(-10px, -10px, 0)
 
-.category_item:hover .category_item_picture
+.category__item:hover .category__item_picture
 	opacity: 0.3
 
-.category_item:hover .category_text
+.category__item:hover .category_text
 	opacity: 1
 
 .category_text
@@ -354,14 +354,14 @@
 	transform: scale(1.2)
 	transition: $transition
 
-.footer_top
+.footer__top
 	background: $BG-color
 
-.footer_top_quality
+.footer__top_quality
 	display: flex
 	justify-content: space-between
 
-.footer_top_info
+.footer__top_info
 	max-width: 360px
 	width: 100%
 	margin-top: 103px
@@ -371,23 +371,23 @@
 	align-items: center
 	justify-content: center
 
-.footer_top_info a
+.footer__top_info a
 	text-decoration: none
 
-.footer_top_info_logo
+.footer__top_info_logo
 	margin-bottom: 28px
 
-.footer_top_info_logo:hover
+.footer__top_info_logo:hover
 	transform: scale(1.5) rotate(360deg)
 	transition: $transition
 
-.footer_top_info_title
+.footer__top_info_title
 	margin-bottom: 16px
 	font-size: 19.96px
 	line-height: 24px
 	color: #fbfbfb
 
-.footer_top_info_text
+.footer__top_info_text
 	font-weight: 300
 	font-size: 14px
 	line-height: 17px
@@ -591,16 +591,16 @@
 	.category_wrap
 		justify-content: space-between
 
-	.category_item_picture
+	.category__item_picture
 		width: 100%
 		height: 100%
 
-	.category_item:not(:last-child)
+	.category__item:not(:last-child)
 		width: 232px
 		height: 167px
 		margin-bottom: 20px
 
-	.category_item:last-child
+	.category__item:last-child
 		height: 116px
 
 	.featured
@@ -618,15 +618,15 @@
 	.button_main
 		margin-top: 32px
 
-	.footer_top_quality
+	.footer__top_quality
 		flex-direction: column
 		align-items: center
 
-	.footer_top_info
+	.footer__top_info
 		margin-top: 48px
 		margin-bottom: 48px
 
-	.footer_top_info:not(:last-child)
+	.footer__top_info:not(:last-child)
 		margin-bottom: 0px
 
 	.subscribe
@@ -645,11 +645,16 @@
 		margin-bottom: 27px
 
 @media ( max-width: 768px)
+	.category__item-long	.category__item_picture_wrap
+		height: 100%
+	.category__item-long a
+		height: 100%
+	.category__item-long	.category__item_picture
+		object-fit: cover
 	.category
 		margin-bottom: 96px
 
 @media (max-width: 375px)
-
 	.container
 		padding-left: 16px
 		padding-right: 16px
@@ -677,12 +682,12 @@
 		font-weight: 900
 		font-size: 38px
 
-	.category_item:not(:last-child)
+	.category__item:not(:last-child)
 		width: 343px
 		height: 248px
 		margin-bottom: 32px
 
-	.category_item:last-child
+	.category__item:last-child
 		height: 111px
 		width: 100%
 
@@ -698,7 +703,7 @@
 	.featured_items
 		padding-left: 2px
 
-	.footer_top_quality
+	.footer__top_quality
 		width: 347px
 
 	.subscribe
@@ -710,3 +715,5 @@
 
 	.footer_copy
 		padding-top: 40px
+
+		width: 100px
