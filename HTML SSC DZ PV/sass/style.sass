@@ -517,6 +517,7 @@
 	fill: #000
 
 @media screen and (max-width: 768px)
+
 	.container
 		padding-left: 2%
 		padding-right: 2%
@@ -543,13 +544,12 @@
 		height: 368px
 		margin-bottom: 20px
 		.intro_wrap
-			background-size: 52%
 			background-position-x: -22px
 			background-position-y: 4px
 			background-size: 390px
 		.intro_text
 			margin-right: 10px
-			max-width: 44%
+			max-width: 48%
 			padding-left: 16px
 			.intro_title
 				font-size: 24px
@@ -607,20 +607,41 @@
 	.footer_wrap
 		padding: 24px 16px
 
-// @media screen and (max-width: 376) and (max-width: 767px)
-// 	.intro
-// 		height: 363px
-// 		margin-bottom: 20px
-// 	.intro_wrap
-// 		background-size: 52%
-// 		background-position: bottom
+@media screen and (max-width: 485px)
+
+	.category
+		margin-bottom: 64px
+		.category__item:not(:last-child)
+			width: 100%
+			margin-bottom: 32px
+		.category__item:last-child
+			width: 100%
+			margin-bottom: 0
+			.category__item_picture_wrap
+				height: 111px
+				.category__item_picture
+					object-fit: cover
+					height: 111px
+
+	.featured
+		margin-bottom: 96px
+		.featured_items
+			margin-bottom: 0
+			.featured_item
+				width: 100%
+				margin-bottom: 15px
+				.featured_image
+					width: 100%
 
 @media screen and (max-width: 375px)
+
 	.header__left
 		padding-left: 0
 		padding-right: 0
+
 	.header_item
 		display: none
+
 	.menu
 		margin-right: 0
 

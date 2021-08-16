@@ -1793,14 +1793,13 @@ label:hover {
     margin-bottom: 20px;
   }
   .intro .intro_wrap {
-    background-size: 52%;
     background-position-x: -22px;
     background-position-y: 4px;
     background-size: 390px;
   }
   .intro .intro_text {
     margin-right: 10px;
-    max-width: 44%;
+    max-width: 48%;
     padding-left: 16px;
   }
   .intro .intro_text .intro_title {
@@ -1880,15 +1879,39 @@ label:hover {
     padding: 24px 16px;
   }
 }
-@media screen and (max-width: 376) and (max-width: 767px) {
-  .intro {
-    height: 363px;
-    margin-bottom: 20px;
+@media screen and (max-width: 485px) {
+  .category {
+    margin-bottom: 64px;
+  }
+  .category .category__item:not(:last-child) {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .category .category__item:last-child {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .category .category__item:last-child .category__item_picture_wrap {
+    height: 111px;
+  }
+  .category .category__item:last-child .category__item_picture_wrap .category__item_picture {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 111px;
   }
 
-  .intro_wrap {
-    background-size: 52%;
-    background-position: bottom;
+  .featured {
+    margin-bottom: 96px;
+  }
+  .featured .featured_items {
+    margin-bottom: 0;
+  }
+  .featured .featured_items .featured_item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .featured .featured_items .featured_item .featured_image {
+    width: 100%;
   }
 }
 @media screen and (max-width: 375px) {
