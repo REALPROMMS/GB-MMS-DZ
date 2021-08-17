@@ -1,6 +1,6 @@
 @import "vars"
 
-.catalog_header_color
+.catalog_header_color_registr
 	background-color: #f8f3f4
 	padding-top: 60px
 	padding-bottom: 60px
@@ -15,7 +15,7 @@
 	line-height: 29px
 	font-weight: normal
 
-.catalog_header_color:hover .catalog_header_title
+.catalog_header_color_registr:hover .catalog_header_title
 	transform: translateX(620px)
 	transition: all 1.2s linear
 	color: darken($btn-color, 70%)
@@ -41,7 +41,7 @@
 	margin-bottom: 20px
 
 .registr_info_input
-	width: 360px
+	width: 100%
 	height: 45px
 	margin-bottom: 20px
 	text-align: left
@@ -63,6 +63,9 @@
 	color: #000
 	font-weight: 300
 
+.registr_form_radio_other
+	display: none
+
 .registr_form p
 	font-size: 13px
 	line-height: 16px
@@ -71,7 +74,7 @@
 	margin-bottom: 40px
 
 .registr_content
-	max-width: 650px
+	max-width: 53%
 	width: 100%
 	display: flex
 	flex-direction: column
@@ -127,6 +130,7 @@ li
 	color: #fff
 	font-weight: 400
 	cursor: pointer
+	transition: $transition
 
 .registr_form_button svg
 	fill: white
@@ -142,3 +146,53 @@ li
 	border: 1px solid #000
 	transition: $transition
 	transform: scale(1.05)
+
+@media screen and (max-width: 768px)
+
+	.container
+		padding-left: 2%
+		padding-right: 2%
+
+	.registr
+		padding-top: 40px
+		.registr_form_radio_other
+			display: flex
+		.registr_content
+			max-width: 355px
+			width: 100%
+			& h3
+				font-size: 16px
+				line-height: 19px
+				margin-bottom: 32px
+			& p
+				font-size: 16px
+				line-height: 19px
+			& ul
+				font-size: 16px
+				line-height: 19px
+			& ul li
+				margin-bottom: 25px
+
+@media screen and (max-width: 600px)
+
+	.registr
+		flex-direction: column
+		padding-bottom: 100px
+		& .registr_content
+			padding-top: 40px
+
+@media screen and (max-width: 485px)
+
+	.registr
+		flex-direction: column
+		padding-bottom: 100px
+		& .registr_content
+			padding-top: 40px
+
+@media screen and (max-width: 375px)
+
+	.registr
+		flex-direction: column
+		padding-bottom: 100px
+		& .registr_content
+			padding-top: 40px
