@@ -103,12 +103,11 @@
 	transition: $transition
 	text-decoration: none
 
-.menu__list ul a:hover
+.menu__list ul:hover
 	font-size: 14px
 	line-height: 1.2
 	color: $btn-color
 	font-weight: 400
-	text-decoration: underline
 
 .menu__opened
 	transform: scaleX(1)
@@ -464,7 +463,7 @@
 	color: #ffffff
 	font-size: 14px
 	padding: 16px 6px
-	border: none
+	border: 1px solid $btn-color
 	background: $btn-color
 	border-top-right-radius: 20px
 	border-bottom-right-radius: 20px
@@ -474,6 +473,7 @@
 .subscribe_form_button:hover
 	color: black
 	background: #e1e1e1
+	border: 1px solid black
 
 .footer_bot
 	background: $BG-color
@@ -515,6 +515,105 @@
 
 .footer_icon
 	fill: #000
+
+@media screen and (max-width: 1200px)
+
+	.category_wrap
+
+		padding-left: 1%
+		padding-right: 1%
+
+	.featured
+		padding-left: 1%
+		padding-right: 1%
+
+@media screen and (max-width: 935px)
+
+	.header__left
+		padding-left: 2%
+
+	.header__right
+		padding-right: 2%
+		.menu__list
+			padding: 16px 17px 45px 20px
+			right: 12px
+			& h4
+				font-size: 12px
+				margin-bottom: 15px
+			& ul:not(:last-child)
+				margin-bottom: 15px
+			& ul li
+				margin-top: 10px
+				margin-left: 16px
+				padding-right: 30px
+
+	.intro
+		height: 368px
+		margin-bottom: 20px
+		.intro_wrap
+			background-position-x: -22px
+			background-position-y: 4px
+			background-size: 390px
+		.intro_text
+			margin-right: 10px
+			max-width: 48%
+			padding-left: 16px
+			.intro_title
+				font-size: 24px
+				.decor_brand
+					font-size: 44px
+
+	.category
+		margin-bottom: 155px
+		.category__item:not(:last-child)
+			width: 32%
+			margin-bottom: 20px
+		.category__item:last-child
+			width: 100%
+			margin-bottom: 0
+
+	.featured
+		margin-bottom: 65px
+		.featured_title
+			margin-bottom: 3px
+		.featured_text
+			margin-bottom: 74px
+		.featured_items
+			margin-bottom: 0
+			.featured_item
+				width: 48%
+				margin-bottom: 15px
+				.featured_image
+					width: 100%
+		.button_main
+			margin-top: 20px
+
+	.footer__top_quality
+		flex-direction: column
+		align-items: center
+		.footer__top_info
+			margin-top: 48px
+			margin-bottom: 48px
+		.footer__top_info:not(:last-child)
+			margin-bottom: 0
+
+	.subscribe
+		padding-top: 54px
+		padding-bottom: 140px
+		background-position-x: -374px
+		background-position-y: 0
+		background-size: 300%
+		.subscribe_block
+			flex-direction: column
+			.subscribe_block_content
+				padding-bottom: 48px
+				.subscribe_img
+					margin-bottom: 20px
+		.subscribe_block_form_title
+			margin-bottom: 27px
+
+	.footer_wrap
+		padding: 24px 16px
 
 @media screen and (max-width: 768px)
 
@@ -608,7 +707,37 @@
 	.footer_wrap
 		padding: 24px 16px
 
+@media screen and (max-width: 568px)
+
+	.intro
+		height: 363px
+		margin-bottom: 64px
+		.intro_wrap
+			background-image: none
+		.intro_text
+			margin-right: 14px
+			max-width: 90%
+			padding-left: 15px
+			.intro_title
+				font-size: 24px
+				.decor_brand
+					font-size: 38px
+
 @media screen and (max-width: 485px)
+
+	.intro
+		height: 363px
+		margin-bottom: 64px
+		.intro_wrap
+			background-image: none
+			.intro_text
+				margin-right: 14px
+				max-width: 90%
+				padding-left: 15px
+				.intro_title
+					font-size: 24px
+					.decor_brand
+						font-size: 38px
 
 	.category
 		margin-bottom: 64px
