@@ -1,0 +1,842 @@
+*
+	margin: 0
+	padding: 0 0
+	box-sizing: border-box
+	font-family: "Lato", sans-serif
+
+@import "catalog"
+@import "registr"
+@import "basket"
+@import "product"
+@import "vars"
+
+.container
+	max-width: 1160px
+	width: 100%
+	margin: 0 auto
+
+.header
+	background: $BG-color
+	position: relative
+	padding: 18px 0
+
+.header_wrap
+	display: flex
+	justify-content: space-between
+
+.header__left
+	display: flex
+	align-items: center
+
+.header_logo
+	margin-right: 41px
+	text-decoration: none
+
+.header_icon
+	fill: #fff
+	transition: $transition
+
+.header_icon:hover
+	fill: $btn-color
+	transition: $transition
+
+.header__right
+	align-items: center
+	display: flex
+
+.menu
+	margin-right: 25px
+
+.menu__list
+	background-color: white
+	padding: 16px 17px 37px 35px
+	position: absolute
+	right: 0
+	top: 100%
+	box-shadow: 0px 10px 10px $btn-color
+	transition: transform 0.2s linear
+	z-index: 10000
+	transform: scaleX(0)
+	display: flex
+	flex-direction: column
+
+.menu__list h6
+	font-size: 14px
+	line-height: 1.2
+	color: #000
+	font-weight: 700
+	text-transform: uppercase
+	margin-bottom: 24px
+
+.menu__list ul
+	font-size: 14px
+	line-height: 1.2
+	color: $btn-color
+	font-weight: 400
+
+.menu__list ul .menu-link
+	font-size: 14px
+	line-height: 1.2
+	color: $btn-color
+	font-weight: 400
+
+.menu__list ul .menu-link:hover
+	text-decoration: none
+	transition: $transition
+
+.menu__list ul:not(:last-child)
+	margin-bottom: 20px
+
+.menu__list ul li
+	margin-top: 12px
+	margin-left: 22px
+	text-transform: capitalize
+	cursor: pointer
+	padding-right: 60px
+	list-style-type: none
+
+.menu__list ul a
+	font-size: 14px
+	line-height: 1.2
+	color: #6f6e6e
+	font-weight: 400
+	transition: $transition
+	text-decoration: none
+
+.menu__list ul:hover
+	font-size: 14px
+	line-height: 1.2
+	color: $btn-color
+	font-weight: 400
+
+.menu__opened
+	transform: scaleX(1)
+
+.btn-menu
+	background: none
+	padding: 0
+	cursor: pointer
+	border: none
+
+.btn-menu__close
+	background: none
+	cursor: pointer
+	border: none
+	margin-bottom: 5px
+	transition: $transition
+	fill: #6f6e6e
+	margin-left: auto
+
+.btn-menu__close:hover
+	transform: scale(1.2)
+	fill: $btn-color
+
+.header_item:not(:last-child)
+	margin-right: 21px
+
+.intro
+	background-color: #f1e4e6
+	height: 764px
+	margin-bottom: 65px
+
+.intro_wrap
+	display: flex
+	align-items: center
+	height: 100%
+	justify-content: flex-end
+	background-image: url(../photo/category/intro.svg)
+	background-repeat: no-repeat
+	background-position-x: -208px
+	background-position-y: 30px
+	z-index: 5
+
+.intro_text
+	width: 100%
+	max-width: 405px
+	padding-left: 20px
+	border-left: 12px solid $btn-color
+	margin-right: 100px
+
+.intro_title
+	font-weight: 700
+	font-size: 32px
+
+.decor_brand
+	font-weight: 900
+	font-size: 48px
+
+.decor_fashion
+	color: $btn-color
+
+.category
+	margin-bottom: 96px
+
+.category_wrap
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+.category__item
+	position: relative
+	background-color: $btn-color
+	cursor: pointer
+
+.category__item:not(:last-child)
+	width: 32%
+	margin-bottom: 30px
+
+.category__item:last-child
+	width: 100%
+
+.category__item_picture
+	display: block
+	transition: opacity 0.2s linear
+	width: 100%
+
+.category__item_picture_wrap
+	background: #060608
+	background: linear-gradient(0deg, #060608 38%, rgba(241, 109, 127, 0.93041) 100%)
+	transition: transform 0.2s linear
+
+.category__item:hover .category__item_picture_wrap
+	transform: translate3d(-10px, -10px, 0)
+
+.category__item:hover .category__item_picture
+	opacity: 0.3
+
+.category__item:hover .category_text
+	opacity: 1
+
+.category_text
+	width: 100%
+	position: absolute
+	top: 50%
+	left: 0
+	text-align: center
+	transform: translate3d(0, -50%, 0) translate3d(-10px, -10px, 0)
+	opacity: 0
+	transition: opacity 0.2s linear
+	font-size: 16px
+	line-height: 19px
+	color: #fff
+	font-weight: 400
+
+.category_text svg
+	margin-top: 5px
+
+.category_link
+	text-decoration: none
+
+.category_text_header
+	font-size: 24px
+	line-height: 29px
+	color: $btn-color
+	font-weight: 700
+	text-transform: uppercase
+
+.featured
+	margin-bottom: 95px
+
+.featured_wrap
+	text-align: center
+
+.featured_title
+	font-size: 30px
+	line-height: 36px
+	color: $BG-color
+	margin-bottom: 6px
+
+.featured_text
+	font-size: 14px
+	line-height: 17px
+	color: #9f9f9f
+	margin-bottom: 48px
+
+.featured_items
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-bottom: 48px
+
+.featured_item
+	width: 32%
+	margin-bottom: 30px
+	position: relative
+
+.featured_image
+	width: 100%
+
+.featured_item:hover
+	box-shadow: 0 5px 8px $btn-color
+	transition: $transition
+
+.featured_item:hover .featured_image
+	filter: brightness(30%)
+	transition: all 0.4s linear
+
+.featured_item_content
+	padding: 25px 17px 20px
+	text-align: left
+
+.featured_item_title
+	font-size: 13px
+	line-height: 16px
+	color: #000
+	margin-bottom: 13px
+
+.featured_item_link
+	text-decoration: none
+	color: #000
+
+.featured_item_text
+	font-weight: 300
+	font-size: 14px
+	line-height: 17px
+	color: #5d5d5d
+	margin-bottom: 18px
+
+.featured_item_price
+	font-size: 16px
+	line-height: 19px
+	color: $btn-color
+
+.add-box
+	position: absolute
+	top: 185px
+	display: none
+	justify-content: center
+	width: 100%
+
+.featured_item:hover .add-box
+	display: flex
+
+.add
+	border: 1px solid #ffffff
+	padding: 10px
+	text-decoration: none
+	display: flex
+	justify-content: center
+	align-items: center
+
+.add:hover
+	box-shadow: 0 0 10px $btn-color
+	transform: scale(1.2)
+	transition: $transition
+
+.add-text
+	font-size: 14px
+	color: #ffffff
+	font-weight: 700
+	margin-left: 8px
+
+.button
+	border: 1px solid $btn-color
+	font-size: 16px
+	line-height: 19px
+	color: #f26376
+	padding: 15px 40px
+	text-decoration: none
+	transition: $transition
+
+.button_main
+	display: flex
+	justify-content: center
+	width: 100%
+	margin-top: 58px
+	transition: $transition
+
+.button:hover
+	background: $btn-color
+	border: 1px solid $btn-color
+	color: #ffffff
+	transition: $transition
+
+.button_main:hover
+	transform: scale(1.2)
+	transition: $transition
+
+.footer__top
+	background: $BG-color
+
+.footer__top_quality
+	display: flex
+	justify-content: space-between
+
+.footer__top_info
+	max-width: 360px
+	width: 100%
+	margin-top: 103px
+	margin-bottom: 103px
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+
+.footer__top_info a
+	text-decoration: none
+
+.footer__top_info_logo
+	margin-bottom: 28px
+
+.footer__top_info_logo:hover
+	transform: scale(1.5) rotate(360deg)
+	transition: $transition
+
+.footer__top_info_title
+	margin-bottom: 16px
+	font-size: 19.96px
+	line-height: 24px
+	color: #fbfbfb
+
+.footer__top_info_text
+	font-weight: 300
+	font-size: 14px
+	line-height: 17px
+	text-align: center
+	color: #a7a4a4
+
+.subscribe
+	background-image: url(../photo/subscribe/BG.svg)
+	background-repeat: no-repeat
+	background-size: cover
+	padding-top: 87px
+	padding-bottom: 126px
+
+.subscribe_block
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.subscribe_block_content
+	max-width: 360px
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
+.subscribe_img
+	margin-bottom: 30px
+
+.subscribe_block_text
+	font-size: 20px
+	line-height: 24px
+	text-align: center
+	color: #222224
+
+.subscribe_block_form
+	max-width: 540px
+	width: 100%
+	text-align: center
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.subscribe_block_form_title
+	font-size: 18px
+	font-weight: normal
+	line-height: 165%
+	color: #222224
+	margin-bottom: 32px
+
+.subscribe_span
+	font-size: 20px
+	font-weight: bold
+
+.subscribe_form
+	display: flex
+	justify-content: center
+	max-width: 356px
+	width: 100%
+
+.subscribe_input
+	width: 256px
+	background: #e1e1e1
+	border: none
+	border-top-left-radius: 20px
+	border-bottom-left-radius: 20px
+	padding: 16px 22px
+	outline: none
+
+.subscribe_form_button
+	text-align: center
+	color: #ffffff
+	font-size: 14px
+	padding: 16px 6px
+	border: 1px solid $btn-color
+	background: $btn-color
+	border-top-right-radius: 20px
+	border-bottom-right-radius: 20px
+	cursor: pointer
+	transition: $transition
+
+.subscribe_form_button:hover
+	color: black
+	background: #e1e1e1
+	border: 1px solid black
+
+.footer_bot
+	background: $BG-color
+
+.footer_wrap
+	padding: 24px 0
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.footer_copy
+	font-size: 16px
+	line-height: 19px
+	color: #fbfbfb
+
+.footer_social_media
+	display: flex
+
+.social_media_item
+	background: #fff
+	width: 32px
+	height: 32px
+	display: flex
+	align-items: center
+	justify-content: center
+	transition: $transition
+
+.social_media_item:not(:last-child)
+	margin-right: 7px
+
+.social_media_item:hover .footer_icon
+	fill: #fff
+	transition: $transition
+
+.social_media_item:hover
+	background: $btn-color
+	transition: $transition
+	transform: scale(1.1)
+
+.footer_icon
+	fill: #000
+
+@media screen and (max-width: 1200px)
+
+	.category_wrap
+
+		padding-left: 1%
+		padding-right: 1%
+
+	.featured
+		padding-left: 1%
+		padding-right: 1%
+
+@media screen and (max-width: 935px)
+
+	.header__left
+		padding-left: 2%
+
+	.header__right
+		padding-right: 2%
+		.menu__list
+			padding: 16px 17px 45px 20px
+			right: 12px
+			& h4
+				font-size: 12px
+				margin-bottom: 15px
+			& ul:not(:last-child)
+				margin-bottom: 15px
+			& ul li
+				margin-top: 10px
+				margin-left: 16px
+				padding-right: 30px
+
+	.intro
+		height: 368px
+		margin-bottom: 20px
+		.intro_wrap
+			background-position-x: -22px
+			background-position-y: 4px
+			background-size: 390px
+		.intro_text
+			margin-right: 10px
+			max-width: 48%
+			padding-left: 16px
+			.intro_title
+				font-size: 24px
+				.decor_brand
+					font-size: 44px
+
+	.category
+		margin-bottom: 155px
+		.category__item:not(:last-child)
+			width: 32%
+			margin-bottom: 20px
+		.category__item:last-child
+			width: 100%
+			margin-bottom: 0
+
+	.featured
+		margin-bottom: 65px
+		.featured_title
+			margin-bottom: 3px
+		.featured_text
+			margin-bottom: 74px
+		.featured_items
+			margin-bottom: 0
+			.featured_item
+				width: 48%
+				margin-bottom: 15px
+				.featured_image
+					width: 100%
+		.button_main
+			margin-top: 20px
+
+	.footer__top_quality
+		flex-direction: column
+		align-items: center
+		.footer__top_info
+			margin-top: 48px
+			margin-bottom: 48px
+		.footer__top_info:not(:last-child)
+			margin-bottom: 0
+
+	.subscribe
+		padding-top: 54px
+		padding-bottom: 140px
+		background-position-x: -374px
+		background-position-y: 0
+		background-size: 300%
+		.subscribe_block
+			flex-direction: column
+			.subscribe_block_content
+				padding-bottom: 48px
+				.subscribe_img
+					margin-bottom: 20px
+		.subscribe_block_form_title
+			margin-bottom: 27px
+
+	.footer_wrap
+		padding: 24px 16px
+
+@media screen and (max-width: 768px)
+
+	.container
+		padding-left: 2%
+		padding-right: 2%
+
+	.header__left
+		padding-left: 2%
+
+	.header__right
+		padding-right: 2%
+		.menu__list
+			padding: 16px 17px 45px 20px
+			right: 12px
+			& h4
+				font-size: 12px
+				margin-bottom: 15px
+			& ul:not(:last-child)
+				margin-bottom: 15px
+			& ul li
+				margin-top: 10px
+				margin-left: 16px
+				padding-right: 30px
+
+	.intro
+		height: 368px
+		margin-bottom: 20px
+		.intro_wrap
+			background-position-x: -22px
+			background-position-y: 4px
+			background-size: 390px
+		.intro_text
+			margin-right: 10px
+			max-width: 48%
+			padding-left: 16px
+			.intro_title
+				font-size: 24px
+				.decor_brand
+					font-size: 44px
+
+	.category
+		margin-bottom: 155px
+		.category__item:not(:last-child)
+			width: 32%
+			margin-bottom: 20px
+		.category__item:last-child
+			width: 100%
+			margin-bottom: 0
+
+	.featured
+		margin-bottom: 65px
+		.featured_title
+			margin-bottom: 3px
+		.featured_text
+			margin-bottom: 74px
+		.featured_items
+			margin-bottom: 0
+			.featured_item
+				width: 48%
+				margin-bottom: 15px
+				.featured_image
+					width: 100%
+		.button_main
+			margin-top: 20px
+
+	.footer__top_quality
+		flex-direction: column
+		align-items: center
+		.footer__top_info
+			margin-top: 48px
+			margin-bottom: 48px
+		.footer__top_info:not(:last-child)
+			margin-bottom: 0
+
+	.subscribe
+		padding-top: 54px
+		padding-bottom: 140px
+		background-position-x: -374px
+		background-position-y: 0
+		background-size: 300%
+		.subscribe_block
+			flex-direction: column
+			.subscribe_block_content
+				padding-bottom: 48px
+				.subscribe_img
+					margin-bottom: 20px
+		.subscribe_block_form_title
+			margin-bottom: 27px
+
+	.footer_wrap
+		padding: 24px 16px
+
+@media screen and (max-width: 568px)
+
+	.intro
+		height: 363px
+		margin-bottom: 64px
+		.intro_wrap
+			background-image: none
+		.intro_text
+			margin-right: 14px
+			max-width: 90%
+			padding-left: 15px
+			.intro_title
+				font-size: 24px
+				.decor_brand
+					font-size: 38px
+
+@media screen and (max-width: 485px)
+
+	.intro
+		height: 363px
+		margin-bottom: 64px
+		.intro_wrap
+			background-image: none
+			.intro_text
+				margin-right: 14px
+				max-width: 90%
+				padding-left: 15px
+				.intro_title
+					font-size: 24px
+					.decor_brand
+						font-size: 38px
+
+	.category
+		margin-bottom: 64px
+		.category__item:not(:last-child)
+			width: 100%
+			margin-bottom: 32px
+		.category__item:last-child
+			width: 100%
+			margin-bottom: 0
+			.category__item_picture_wrap
+				height: 111px
+				.category__item_picture
+					object-fit: cover
+					height: 111px
+
+	.featured
+		margin-bottom: 96px
+		.featured_items
+			margin-bottom: 0
+			.featured_item
+				width: 100%
+				margin-bottom: 15px
+				.featured_image
+					width: 100%
+
+@media screen and (max-width: 375px)
+
+	.header__left
+		padding-left: 0
+		padding-right: 0
+
+	.header_item
+		display: none
+
+	.menu
+		margin-right: 0
+
+	.intro
+		height: 363px
+		margin-bottom: 64px
+		.intro_wrap
+			background-image: none
+		.intro_text
+			margin-right: 14px
+			max-width: 90%
+			padding-left: 15px
+			.intro_title
+				font-size: 24px
+				.decor_brand
+					font-size: 38px
+
+	.category
+		margin-bottom: 64px
+		.category__item:not(:last-child)
+			width: 100%
+			margin-bottom: 32px
+		.category__item:last-child
+			width: 100%
+			margin-bottom: 0
+			.category__item_picture_wrap
+				height: 111px
+				.category__item_picture
+					object-fit: cover
+					height: 111px
+
+	.featured
+		margin-bottom: 96px
+		.featured_title
+			margin-bottom: 3px
+		.featured_text
+			margin-bottom: 64px
+		.featured_items
+			margin-bottom: 0
+			.featured_item
+				width: 100%
+				margin-bottom: 15px
+				.featured_image
+					width: 100%
+		.button_main
+			margin-top: 30px
+
+	.footer__top_info
+		max-width: 315px
+
+	.subscribe
+		padding-top: 54px
+		padding-bottom: 110px
+		background-position-x: -410px
+		background-position-y: 0
+		background-size: 550%
+		.subscribe_block
+			flex-direction: column
+			.subscribe_block_content
+				padding-bottom: 59px
+		.subscribe_block_form_title
+			margin-bottom: 22px
+
+	.footer_wrap
+		flex-direction: column-reverse
+		padding: 43px 0 10px 0
+		.footer_social_media
+			padding-bottom: 40px
